@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+		<servlet-name>LoginCTL</servlet-name>
+		<servlet-class>CTL.LoginCTL</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginCTL</servlet-name>
+		<url-pattern>/LoginCTL</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>StudentCTL</servlet-name>
+		<servlet-class>CTL.StudentCTL</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FacultyCTL</servlet-name>
+    <servlet-class>CTL.FacultyCTL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StudFac</servlet-name>
+    <servlet-class>CTL.StudFac</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StudStaffCTL</servlet-name>
+    <servlet-class>CTL.StudStaffCTL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FacStaffCTL</servlet-name>
+    <servlet-class>CTL.FacStaffCTL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourStaffCTL</servlet-name>
+    <servlet-class>CTL.CourStaffCTL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePass</servlet-name>
+    <servlet-class>CTL.ChangePass</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StaStaff</servlet-name>
+    <servlet-class>CTL.StaStaff</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>StudentCTL</servlet-name>
+		<url-pattern>/StudentCTL</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FacultyCTL</servlet-name>
+    <url-pattern>/FacultyCTL</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudFac</servlet-name>
+    <url-pattern>/StudFac</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudStaffCTL</servlet-name>
+    <url-pattern>/StudStaffCTL</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FacStaffCTL</servlet-name>
+    <url-pattern>/FacStaffCTL</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourStaffCTL</servlet-name>
+    <url-pattern>/CourStaffCTL</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePass</servlet-name>
+    <url-pattern>/ChangePass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StaStaff</servlet-name>
+    <url-pattern>/StaStaff</url-pattern>
+  </servlet-mapping>
+    <filter id="login">
+		<filter-name>FilterCTL</filter-name>
+		<filter-class>CTL.FilterCTL</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>FilterCTL</filter-name>
+		<url-pattern>*.do</url-pattern>
+	</filter-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
